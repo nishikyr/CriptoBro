@@ -10,7 +10,7 @@ import { map } from 'rxjs';
 })
 export class RestCriptoService {
 
-  private API_URL = 'http://localhost:3000/api';
+  private API_URL = 'http://localhost:3003/api/zonaDashboard';
   private _httpClient = inject(HttpClient);
   private _injector = inject(Injector);
 
@@ -22,14 +22,15 @@ export class RestCriptoService {
 
   }
 
+  //---------------------------- AQUI OBTENEMOS EL LISTADO DE CRIPTOMONEDAS -------------------------
   public getMonedas(): Signal<Coin[]>{
     return toSignal(
       this._httpClient
-          .get<Coin[]>(
-            `${this.API_URL}/coins/markets?vs_currency=${this.currency()}&per_page=${this.paginacion()}`
+          .get<IRestMessage>(
+            `${this.API_URL}/getCriptomonedas?vs_currency=${this.currency()}&per_page=${this.paginacion()}`
           ).pipe(
-            map(data => {
-              return data || [];
+            map(response => {
+              return response.datos ?? []
             })
           ),
           { initialValue: [], injector: this._injector }

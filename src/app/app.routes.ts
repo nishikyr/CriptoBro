@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './components/zonaDashboard/layout/layout.component';
-import { HomeComponent} from './components/zonaDashboard/home-component/home-component.component';
+import { HomeComponent} from './components/zonaDashboard/home-component/home-component';
 
 export const routes: Routes = [
   //--- Esto me previene de que si alguien escribe mal la ruta, se ha redireccionado al Home ---
