@@ -1,59 +1,68 @@
-# CriptoDashboard
+# Crypto Tracker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+A cryptocurrency tracker application built with Angular 19 and the CoinGecko API. This project demonstrates the use of Angular 19 features including signals and the new control flow syntax (@if, @for) with Bootstrap for styling.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- View cryptocurrency prices, market caps, and 24-hour price changes
+- Detailed information about individual cryptocurrencies
+- Global market overview with market dominance statistics
+- Multiple currency support (USD, EUR, GBP, JPY)
+- Responsive design for all device sizes
 
-```bash
-ng serve
-```
+## Technologies Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Frontend**: Angular 19, Bootstrap 5
+- **Backend**: Node.js, Express
+- **API**: CoinGecko API
+- **State Management**: Angular Signals
 
-## Code scaffolding
+## Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Prerequisites
 
-```bash
-ng generate component component-name
-```
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Installation
 
-```bash
-ng generate --help
-```
+1. Clone the repository or download the source code
 
-## Building
+2. Install dependencies for the Angular frontend
+   ```
+   npm install
+   ```
 
-To build the project run:
+3. Install dependencies for the Express backend
+   ```
+   Comming soon
+   ```
 
-```bash
-ng build
-```
+### Running the Application
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1. Start the backend server
+   ```
+   cd backend
+   npm start
+   ```
 
-## Running unit tests
+2. In a separate terminal, start the Angular development server
+   ```
+   ng serve
+   ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+3. Navigate to `http://localhost:4200/` in your browser
 
-```bash
-ng test
-```
+## Project Structure
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+## Angular 19 Features Demonstrated
 
-```bash
-ng e2e
-```
+- **Signals**: Reactive state management without RxJS
+- **Control Flow**: Modern `@if` and `@for` syntax in templates
+- **Standalone Components**: All components are standalone
+- **Dependency Injection**: Using the new inject function
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+Inspired by Binance
+dev: Alejo Nishiky
