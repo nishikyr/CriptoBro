@@ -1,4 +1,4 @@
-# Crypto Tracker
+# CriptoBro
 
 A cryptocurrency tracker application built with Angular 19 and the CoinGecko API. This project demonstrates the use of Angular 19 features including signals and the new control flow syntax (@if, @for) with Bootstrap for styling.
 
