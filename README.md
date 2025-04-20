@@ -64,5 +64,5 @@ A cryptocurrency tracker application built with Angular 19 and the CoinGecko API
 - **Dependency Injection**: Using the new inject function
 
 ## License
-Inspired by Binance
-dev: Alejo Nishiky
+- Inspired by Binance
+- dev: Alejo Nishiky

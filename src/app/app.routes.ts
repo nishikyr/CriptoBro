@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './components/zonaDashboard/layout/layout.component';
 import { HomeComponent} from './components/zonaDashboard/home-component/home-component';
+import { RegistroComponent } from './components/zonaCliente/registroComponent/registro/registro.component';
+import { Verificacion2FAComponent } from './components/zonaCliente/verificacion2FAComponent/verificacion2-fa/verificacion2-fa.component';
 
 export const routes: Routes = [
   //--- Esto me previene de que si alguien escribe mal la ruta, se ha redireccionado al Home ---
@@ -10,6 +12,13 @@ export const routes: Routes = [
     component: LayoutComponent,
     children:[
       {path: 'Home', component: HomeComponent}
+    ]
+  },
+  {
+    path: 'Cliente',
+    children:[
+      {path: 'Registro', component: RegistroComponent},
+      {path: 'Verificar/:operacion', component: Verificacion2FAComponent},
     ]
   }
 ];
