@@ -2,6 +2,12 @@
 
 A cryptocurrency tracker application built with Angular 19 and the CoinGecko API. This project demonstrates the use of Angular 19 features including signals and the new control flow syntax (@if, @for) with Bootstrap for styling.
 
+## Preview
+![Dashboard](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/dashboard.png)
+![Register](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/registro.png)
+![Verificacion2FA](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/verificacion2fa.png)
+
+
 ## Features
 
 - View cryptocurrency prices, market caps, and 24-hour price changes
