@@ -5,7 +5,7 @@ import { RegistroComponent } from './components/zonaCliente/registroComponent/re
 import { Verificacion2FAComponent } from './components/zonaCliente/verificacion2FAComponent/verificacion2-fa/verificacion2-fa.component';
 
 export const routes: Routes = [
-  //--- Esto me previene de que si alguien escribe mal la ruta, se ha redireccionado al Home ---
+  //--- Esto me previene de que si alguien escribe mal la ruta, se ha redireccionado al Home, pero una mejor práctica sería una página de error o url desconocido y redireccionarlo al home ---
   { path:'', redirectTo: '/Dashboard/Home', pathMatch: 'full'},
   {
     path: 'Dashboard',
