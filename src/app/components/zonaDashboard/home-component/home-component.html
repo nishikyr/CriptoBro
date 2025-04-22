@@ -11,14 +11,17 @@
     <div class="row row-cols-1 row-cols-md-2 g-3">
       @for (coin of coins(); track coin.id; let i = $index) {
         <div class="col">
-          <div class="d-flex align-items-center p-3 bg-secondary rounded shadow-sm">
-            <div class="me-3 fw-bold text-warning">{{ i + 1 }}</div>
-            <img [src]="coin.image" [alt]="coin.name" class="me-3" style="width: 32px; height: 32px;" />
-            <div>
-              <div class="fw-semibold">{{ coin.name }}</div>
-              <div class="text-uppercase text-light small">{{ coin.symbol }}</div>
+          <a [routerLink]="['/Dashboard/crypto', coin.id]" class="text-decoration-none">
+            <div class="d-flex align-items-center p-3 bg-secondary rounded shadow-sm">
+              <div class="me-3 fw-bold text-warning">{{ i + 1 }}</div>
+              <img [src]="coin.image" [alt]="coin.name" class="me-3" style="width: 32px; height: 32px;" />
+              <div>
+                <div class="fw-semibold">{{ coin.name }}</div>
+                <div class="text-uppercase text-light small">{{ coin.symbol }}</div>
+              </div>
             </div>
-          </div>
+          </a>
+
         </div>
       }
     </div>
