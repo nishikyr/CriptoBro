@@ -6,6 +6,7 @@ A cryptocurrency tracker application built with Angular 19 and the CoinGecko API
 ![Dashboard](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/dashboard.png)
 ![Register](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/registro.png)
 ![Verificacion2FA](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/verificacion2fa.png)
+![coinDetails](https://github.com/nishikyr/CriptoBro/blob/master/public/muestras/coinDetails.png)
 
 
 ## Features
