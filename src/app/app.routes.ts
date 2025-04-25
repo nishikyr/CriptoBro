@@ -4,6 +4,7 @@ import { HomeComponent} from './components/zonaDashboard/home-component/home-com
 import { RegistroComponent } from './components/zonaCliente/registroComponent/registro.component';
 import { Verificacion2FAComponent } from './components/zonaCliente/verificacion2FAComponent/verificacion2-fa.component';
 import { DetailsCryptoComponent } from './components/zonaDashboard/details-crypto/details-crypto.component';
+import { LoginComponent } from './components/zonaCliente/loginComponent/login.component';
 
 export const routes: Routes = [
   //--- Esto me previene de que si alguien escribe mal la ruta, se ha redireccionado al Home, pero una mejor práctica sería una página de error o url desconocido y redireccionarlo al home ---
@@ -20,6 +21,7 @@ export const routes: Routes = [
     path: 'Cliente',
     children:[
       {path: 'Registro', component: RegistroComponent},
+      {path: 'Login', component: LoginComponent},
       {path: 'Verificar/:operacion', component: Verificacion2FAComponent},
     ]
   }
